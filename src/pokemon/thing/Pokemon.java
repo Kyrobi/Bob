@@ -11,8 +11,9 @@ package pokemon.thing;
 public class Pokemon {
     private int Level;
     private float Exp = 0.0f;
-    private int Health;
+    private int Health, MaxHealth;
     private int id;
+    private string Status;
     private int HP, ATK, DEF, SPATK, SPDEF, SPD;
     
     
@@ -20,5 +21,20 @@ public class Pokemon {
     {
         this.id = id;
         this.Level = 5;
+    }
+
+    public Damage(int Dmg)
+    {
+        int temp = this.Health - Dmg;
+
+        if (temp<=0)
+        {
+            this.Health = 0;
+            this.Status = "FNT"
+        }
+        else
+        {
+         this.Health = this.Health - Dmg;
+        }
     }
 }
