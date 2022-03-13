@@ -1,4 +1,4 @@
-import pokemon.Pokemon;
+import Pokemon.Pokemon;
 
 public class Main {
     public static void main(String[] args) {
