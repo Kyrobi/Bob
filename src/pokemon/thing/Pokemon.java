@@ -10,7 +10,7 @@ package pokemon.thing;
  */
 public class Pokemon {
     private int Level;
-    private float Exp = 0;
+    private float Exp = 0.0f;
     private int Health;
     private int id;
     private int HP, ATK, DEF, SPATK, SPDEF, SPD;
